@@ -26,6 +26,7 @@ const TaskForm = ({
         placeholder="Task title"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
+        autoFocus
         className="text-sm border border-blue-800 p-2 mb-4 w-full rounded-md"
       />
 

@@ -2,7 +2,7 @@
 import Link from "next/link";
 const NavbarAside = () => {
   return (
-    // <aside className="mb-2 text-right flex flex-nowrap lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-center mt-10">
+
     <aside className="mb-2 text-right flex flex-nowrap lg:text-center mt-10">
       <Link
         href="/"
@@ -10,7 +10,7 @@ const NavbarAside = () => {
       >
         <h5>
           home{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none aside-arrows aside-arrows">
             -&gt;
           </span>
         </h5>
@@ -21,7 +21,7 @@ const NavbarAside = () => {
       >
         <h5>
           tasks{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none aside-arrows">
             -&gt;
           </span>
         </h5>
@@ -32,7 +32,7 @@ const NavbarAside = () => {
       >
         <h5>
           create{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none aside-arrows">
             -&gt;
           </span>
         </h5>
@@ -43,7 +43,7 @@ const NavbarAside = () => {
       >
         <h5>
           users{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none aside-arrows">
             -&gt;
           </span>
         </h5>
@@ -54,7 +54,7 @@ const NavbarAside = () => {
       >
         <h5>
           about{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none aside-arrows">
             -&gt;
           </span>
         </h5>

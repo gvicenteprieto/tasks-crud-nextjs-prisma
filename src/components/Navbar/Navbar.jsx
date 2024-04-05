@@ -1,17 +1,20 @@
 "use client";
 import Link from "next/link";
-
+import Image from "next/image";
 const Navbar = () => {
   return (
-    <nav className="header-next-app mb-4 flex justify-between items-center px-10 p-3">
-      <header className="container">
-        <h2 className="text-3xl font-bold">
-          <Link href="/" className="hover:bg-gray-700 hover:text-white">
-            next CRUD
-          </Link>{" "}
-        </h2>
-      </header>
-
+    <nav className="header-next-app mb-4 flex justify-between items-center px-5 p-3">
+      <Link href="/" className="hover:bg-gray-700 hover:text-white">
+        <header className="container flex items-center gap-2">
+          <Image
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            height={50}
+            width={50}
+            alt="NextJs"
+          />
+          <h2 className="text-2xl font-bold">Tasks CRUD</h2>
+        </header>
+      </Link>
       <menu className="flex space-x-0 hidden sm:ml-6 sm:block">
         <Link
           href="/"

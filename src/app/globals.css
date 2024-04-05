@@ -6,20 +6,75 @@ body {
   @apply bg-gray-700 text-white;
 }
 
-/* body {
-  background-color: #918eba;
-} */
+.icons-container {
+  height: 12vmin;
+  width: 12vmin;
+  padding: .5rem;
+}
+
+.skills-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color:  #918eba;
+  padding: 20px;
+  overflow: hidden; 
+}
+
+.skills-banner li {
+  width: auto; 
+  height: auto;
+  padding: 10px;
+  animation: slideBanner 10s linear infinite; 
+}
+
+@keyframes slideBanner {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-40%); 
+  }
+  50% {
+    transform: translateX(0%); 
+  }
+  75% {
+    transform: translateX(40%); 
+  }
+  100% {
+    transform: translateX(0%); 
+  }
+}
+
+#tools p {
+  margin: 10px;
+  margin-left: 20px;
+  width: auto;
+  font-size: 1.25rem;
+  }
+
+
+#tools ul {
+  list-style:circle 
+}
+
+#tools ul li {
+margin: 10px;
+margin-left: 20px;
+font-size: 1.1rem;
+}
+
+.aside-arrows {
+  color:  #918eba;
+}
 
 .header-next-app {
   display: flex;
   justify-content: justify-between;
   align-items: center;
   flex-direction: row;
-  /* background-color: #282c34; */
-  padding: 15px;
-  margin: 10px;
+  /* padding: 15px; */
   color: #918eba;
-  /* border-radius: 10px; */
   border-bottom: 2px solid #918eba;
 }
 .footer-next-app {
@@ -27,8 +82,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 1rem;
   margin: 10px;
   color: #918eba;
-  border-top: 2px solid #918eba;
+  border-top: 1px solid #918eba;
 }
