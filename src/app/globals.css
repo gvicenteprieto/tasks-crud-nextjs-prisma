@@ -46,22 +46,22 @@ body {
   }
 }
 
-#tools p {
-  margin-top: 10px;
+#tools  {
+  margin-top: 15px;
   margin-left: 20px;
   width: auto;
   font-size: 1.25rem;
 }
 
 #tools ul {
-  list-style:inside
+  list-style: circle;
 }
 
-#tools ul li {
+#tools li {
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 1.1rem;
-
+  list-style: square
 }
 
 .aside-arrows {
