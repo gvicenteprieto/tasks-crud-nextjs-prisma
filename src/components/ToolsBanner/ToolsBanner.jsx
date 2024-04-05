@@ -6,10 +6,10 @@ import { FaGithub } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 import { SiVercel } from "react-icons/si";
-const SkillsBanner = () => {
+const ToolsBanner = () => {
   return (
     <div>
-      <ul className="skills-banner">
+      <ul className="tools-banner">
         <li>
           <SiJavascript className="icons-container" />
         </li>
@@ -36,4 +36,4 @@ const SkillsBanner = () => {
   );
 };
 
-export default SkillsBanner;
+export default ToolsBanner;

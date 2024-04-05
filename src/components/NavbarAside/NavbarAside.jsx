@@ -37,7 +37,7 @@ const NavbarAside = () => {
           </span>
         </h5>
       </Link>
-      <Link
+      {/* <Link
         href="/users"
         className="group rounded-lg border border-transparent px-2 py-4 transition-colors hover:border-blue-300 hover:bg-slate-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
       >
@@ -47,7 +47,7 @@ const NavbarAside = () => {
             -&gt;
           </span>
         </h5>
-      </Link>
+      </Link> */}
       <Link
         href="/about"
         className="group rounded-lg border border-transparent px-2 py-4 transition-colors hover:border-blue-300 hover:bg-slate-700 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
