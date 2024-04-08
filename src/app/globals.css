@@ -47,21 +47,19 @@ body {
 }
 
 #tools  {
-  margin-top: 15px;
-  margin-left: 20px;
+  margin-top: 5px;
   width: auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 #tools ul {
-  list-style: circle;
+  list-style: none;
 }
 
 #tools li {
-  margin-top: 10px;
-  margin-left: 40px;
+  margin-top: 2px;
   font-size: 1.1rem;
-  list-style: square
+  list-style: none;
 }
 
 .aside-arrows {
@@ -74,16 +72,13 @@ body {
   align-items: center;
   flex-direction: row;
   color: #918eba;
-  padding: 2rem 1rem;
-  border-bottom: 2px solid #918eba;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid #918eba;
 }
 .footer-next-app {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 10px;
+  flex-direction: row;
   color: #918eba;
-  padding: 1rem;
-  border-top: 0.7rem solid #918eba;
+  background-color: black;
 }

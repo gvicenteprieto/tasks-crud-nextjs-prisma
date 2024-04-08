@@ -60,10 +60,12 @@ function CreatePage({ params }) {
   };
 
   return (
-    <main className="flex flex-col items-center justify-between p-10">
+    <>
+    <header className="flex flex-col items-center justify-between p-10">
       <HeaderPages
         title={params.id == undefined ? "create task" : "edit task"}
       />
+      </header>
       <section className="container mx-auto flex justify-center items-center">
         <TaskForm
           handleSubmit={handleSubmit}
@@ -75,8 +77,10 @@ function CreatePage({ params }) {
           handleDelete={handleDelete}
         />
       </section>
-      <NavbarAside />
-    </main>
+      <section className="flex flex-col items-center justify-between p-10">
+        <NavbarAside />
+      </section>
+      </>
   );
 }
 

@@ -9,16 +9,17 @@ const TaskForm = ({
   handleDelete,
 }) => {
   return (
+    
     <form
-      className="bg-slate-500 p-5 flex flex-col md:w-2/4 lg:w-1/4 text-black rounded-md mt-10 border border-white  hover:border-blue-300"
+      className="bg-slate-500 p-5 flex flex-col md:w-2/4 lg:w-1/4 text-black rounded-md mt-10 border border-white hover:border-blue-300"
       onSubmit={handleSubmit}
     >
-      <h1 className="text-center m-2 font-bold">Task Form</h1>
+      {/* <h1 className="text-2xl text-left  mb-5 font-bold">Task Form</h1> */}
       <label
         htmlFor="title"
-        className="text-white pl-1 font-semibold text-sm mb-2"
+        className="text-black pl-2 mt-2 mb-2"
       >
-        Title
+        Title:
       </label>
       <input
         type="text"
@@ -27,14 +28,14 @@ const TaskForm = ({
         onChange={(e) => setTitle(e.target.value)}
         value={title}
         autoFocus
-        className="text-sm border border-blue-800 p-2 mb-4 w-full rounded-md"
+        className="text-sm border border-blue-800 bg-slate-700 p-3 mb-4 w-full rounded-md text-white"
       />
 
       <label
         htmlFor="description"
-        className="text-white pl-1 font-semibold text-sm mb-2"
+        className="text-black pl-2 mt-2 mb-2"
       >
-        Description
+        Description:
       </label>
       <textarea
         id="description"
@@ -43,11 +44,11 @@ const TaskForm = ({
         value={description}
         cols="30"
         rows="10"
-        className="text-sm border border-blue-800 p-2 mb-4 w-full rounded-md"
+        className="text-sm border border-blue-800 bg-slate-700 p-3 mb-4 w-full rounded-md text-white"
       ></textarea>
       <div className="flex justify-center items-center px-5">
         <button
-          className="border border-blue-500 text-white bg-blue-700 hover:bg-blue-800 hover:text-text-blue-300 hover:border-white py-2 px-4 font-bold rounded-md"
+          className="border border-blue-300 text-white bg-blue-800 hover:bg-blue-800 hover:text-text-blue-300 hover:border-white py-2 px-4 hover:font-bold rounded-md"
           type="submit"
         >
           {params.id == undefined ? "add task" : "edit task"}

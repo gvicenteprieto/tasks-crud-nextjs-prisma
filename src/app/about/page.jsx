@@ -7,30 +7,24 @@ function AboutPage() {
       <header className="flex flex-col items-center justify-between p-10">
         <HeaderPages title={"app tools"} />
       </header>
-      <section className="flex flex-col justify-between items-center">
-        <h3 className="text-2xl font-semi-bold mt-5 mb-2 px-10">
+      <section className="flex flex-col justify-around items-center p-10">
+        <h3 className="text-2xl font-semi-bold m-5 mx-5">
           Tools implemented at Tasks CRUD app.
         </h3>
-        <aside className="container flex justify-center items-center px-10">
+        <aside className="container flex justify-center items-center">
           <ToolsBanner />
         </aside>
         <article
           id="tools"
-          className="flex flex-wrap justify-center items-center px-10"
+          className="flex flex-wrap justify-center text-center items-center"
         >
-          {/* <p>
-            Language, libraries, framework, and other tools used in the web
-            application project:
-          </p> */}
-          {/* <ul> */}
-            <li>JavaScrip language</li>
-            <li>React library</li>
-            <li>Next.js framework</li>
-            <li>Prisma ORM</li>
-            <li>PostgreSQL database</li>
-            <li>GitHub development platform</li>
-            <li>Vercel cloud infrastructure</li>
-          {/* </ul> */}
+          <li className=" mx-5">JavaScrip language</li>
+          <li className=" mx-5">React library</li>
+          <li className=" mx-5">Next.js framework</li>
+          <li className=" mx-5">Prisma ORM</li>
+          <li className=" mx-5">PostgreSQL database</li>
+          <li className=" mx-5">GitHub development platform</li>
+          <li className=" mx-5">Vercel cloud infrastructure</li>
         </article>
       </section>
 
