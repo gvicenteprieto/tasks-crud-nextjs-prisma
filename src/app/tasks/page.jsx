@@ -14,9 +14,10 @@ async function TaskPage() {
       <HeaderPages title={"tasks"} />
       <section className="flex justify-center items-center">
         {tasks.length === 0 ? (
-          <div>
-            <h2 className="text-3xl font-bold"> No Tasks Records</h2>
-          </div>
+           <section className="flex flex-col justify-around items-center pt-10">
+           <h3 className="text-2xl font-semi-bold mx-5"> Not Tasks records</h3>
+       
+           </section>
         ) : (
           <Tasks tasks={tasks} />
         )}
